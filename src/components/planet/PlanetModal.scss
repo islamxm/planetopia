@@ -1,0 +1,155 @@
+.planetModal {
+    color: #fff;
+    .ant-modal-content {
+        background-color: transparent;
+        
+        .ant-modal-close {
+            display: none;
+        }
+        .ant-modal-body {
+            background: #0E1E4A;
+            border: 1.5px solid #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 40px;
+            padding: 30px 65px;
+
+            .planetModal__prof {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 35px;
+                
+                &_in {
+                    width: 182px;
+                    height: 182px;
+                    border-radius: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 182px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 24px;
+                    line-height: 29px;
+                    box-shadow: 12px 0px 35px rgba(255, 255, 255, 0.25);
+                }
+            }
+            .planetModal__main {
+                margin-bottom: 70px;
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 10px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+
+                    &_name {
+                        font-size: 24px;
+                        line-height: 29px;
+                    }
+
+                    &_value {
+                        display: flex;
+                        align-items: center;
+
+                        &_text {
+                            font-size: 23px;
+                            line-height: 28px;
+                            margin-right: 5px;
+                        }
+
+                        &_icon {
+                            width: 32px;
+                            height: 32px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .planetModal__info {
+                margin-bottom: 80px;
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 14px;
+                    line-height: 17px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    &_name {
+                        
+                    }
+
+                    &_value {
+                        text-align: right;
+                    }
+                }
+            }
+
+            .planetModal__action {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                
+            }
+        }
+        .ant-modal-footer {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .planetModal {
+        .ant-modal-content {
+            .ant-modal-body {
+
+                padding: 15px 20px;
+
+                .planetModal__prof {
+                    
+                }
+                .planetModal__main {
+                    margin-bottom: 35px;
+
+                    &_item {
+
+                        &_name {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+
+                        &_value {
+
+                            &_text {
+                                font-size: 18px;
+                                line-height: 22px;
+                            }
+
+                            &_icon {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

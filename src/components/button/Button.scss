@@ -1,0 +1,22 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background: linear-gradient(92.58deg, #B41BAB 11.07%, #8F00FF 94.42%);
+    cursor: pointer;
+    transition: all .3s ease;
+
+    &__text {
+        white-space: nowrap;
+    }
+
+    &:hover {
+        background: linear-gradient(#B41BAB 100%, #B41BAB 100%);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}

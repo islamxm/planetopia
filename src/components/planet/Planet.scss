@@ -1,0 +1,970 @@
+.planet.disabled {
+
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, .7);
+        content: '';
+    }
+
+    .planet__in {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.planet {
+    overflow: hidden;
+    border-radius: 100%;
+
+    &__in {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 75%;
+        margin: 0 auto;
+        padding: 15% 0;
+        align-items: center;
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_btn {
+            padding: 10px 25px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            background: linear-gradient(90deg, #FFC843 5.88%, #B41BAB 100%);
+            border-radius: 20px;
+
+            &:hover {
+                background: linear-gradient(#FFC843 100%, #FFC843 100%);
+            }
+        }
+    }
+
+    &__progress {
+        width: 100%;
+        &_vl {
+            text-align: center;
+            font-weight: 300;
+        }
+
+        &_line {
+            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 22px;
+            
+            
+            &_fill {
+                height: 100%;
+                background-color: #FFC843;
+                border-radius: 22px;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    &__val {
+        &_text {
+            font-weight: 300;
+        }
+        &_icon {
+            background-image: url('../../images/icons/bnb.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+
+.planet#pl1 {
+    width: 109px;
+    height: 109px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    .planet__name {
+
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_line {
+            height: 11px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 15px;
+            height: 15px;
+            background-size: 15px 15px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+    
+}
+
+.planet#pl2 {
+    width: 127px;
+    height: 127px;
+    background-size: 127px 127px;
+
+    .planet__name {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_line {
+            height: 11px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 15px;
+            height: 15px;
+            background-size: 15px 15px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+.planet#pl3 {
+    width: 140px;
+    height: 140px;
+    background-size: 140px 140px;
+
+    .planet__name {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_line {
+            height: 11px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 15px;
+            height: 15px;
+            background-size: 15px 15px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.planet#pl4 {
+    width: 182px;
+    height: 182px;
+    background-size: 182px 182px;
+
+    .planet__name {
+        font-size: 19px;
+        line-height: 23px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &_line {
+            height: 11px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+}
+
+.planet#pl5 {
+    width: 187px;
+    height: 187px;
+    background-size: 187px 187px;
+
+    .planet__name {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &_line {
+            height: 14px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 17px;
+            line-height: 21px;
+        }
+    }
+}
+
+.planet#pl6 {
+    width: 197px;
+    height: 197px;
+    background-size: 197px;
+
+    .planet__name {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &_line {
+            height: 15px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+.planet#pl7 {
+    width: 208px;
+    height: 208px;
+    background-size: 208px;
+
+    .planet__name {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &_line {
+            height: 15px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 18px;
+            height: 18px;
+            background-size: 18px 18px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+.planet#pl8 {
+    width: 241px;
+    height: 241px;
+    background-size: 241px;
+
+    .planet__name {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &_line {
+            height: 15px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 30px;
+            height: 30px;
+            background-size: 30px 30px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 21px;
+            line-height: 25px;
+        }
+    }
+}
+
+.planet#pl9 {
+    width: 245px;
+    height: 245px;
+    background-size: 245px;
+
+    .planet__name {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &_line {
+            height: 15px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 30px;
+            height: 30px;
+            background-size: 30px 30px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 23px;
+            line-height: 28px;
+        }
+    }
+}
+
+.planet#pl10 {
+    width: 245px;
+    height: 245px;
+    background-size: 245px;
+
+    .planet__name {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .planet__progress {
+
+        &_vl {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        &_line {
+            height: 16px;
+
+            &_fill {
+
+            }
+        }
+    }
+
+    .planet__val {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_icon {
+            width: 32px;
+            height: 32px;
+            background-size: 32px 32px;
+            flex: 0 0 auto;
+            margin-right: 5%;
+        }
+
+        &_text {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .planet#pl1 {
+        width: 73px;
+        height: 73px;
+        background-size: 73px;
+    
+        .planet__name {
+            font-size: 10px;
+            line-height: 12px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 7px;
+    
+                &_fill {
+                    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 10px;
+                height: 10px;
+                background-size: 10px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+    .planet#pl2 {
+        width: 85px;
+        height: 85px;
+        background-size: 85px;
+    
+        .planet__name {
+            font-size: 11px;
+            line-height: 13px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 10px;
+                line-height: 12px;
+            }
+    
+            &_line {
+                height: 8px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_icon {
+                width: 10px;
+                height: 10px;
+                background-size: 10px 10px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+    .planet#pl3 {
+        width: 94px;
+        height: 94px;
+        background-size: 94px;
+    
+        .planet__name {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 10px;
+                height: 10px;
+                background-size: 10px 10px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+    }
+    .planet#pl4 {
+        width: 122px;
+        height: 122px;
+        background-size: 122px;
+    
+        .planet__name {
+            font-size: 12.818px;
+            line-height: 16px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12.2472px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_icon {
+                width: 12px;
+                height: 12px;
+                background-size: 12px 12px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 11.4687px;
+                line-height: 14px;
+            }
+        }
+    }
+    .planet#pl5 {
+        width: 126px;
+        height: 126px;
+        background-size: 126px;
+    
+        .planet__name {
+            font-size: 13.4926px;
+            line-height: 16px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12.2472px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 13px;
+                height: 13px;
+                background-size: 13px 13px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 12.1434px;
+                line-height: 15px;
+            }
+        }
+    }
+    .planet#pl6 {
+        width: 132px;
+        height: 132px;
+        background-size: 132px;
+    
+        .planet__name {
+            font-size: 14.1673px;
+            line-height: 17px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12.2472px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 14px;
+                height: 14px;
+                background-size: 14px 14px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 12.1434px;
+                line-height: 15px;
+            }
+        }
+    }
+    .planet#pl7 {
+        width: 127px;
+        height: 127px;
+        background-size: 127px;
+    
+        .planet__name {
+            font-size: 13.4978px;
+            line-height: 16px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12.2472px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 13px;
+                height: 13px;
+                background-size: 13px 13px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 12.2707px;
+                line-height: 15px;
+            }
+        }
+    }
+    .planet#pl8 {
+        width: 163px;
+        height: 163px;
+        background-size: 163px;
+    
+        .planet__name {
+            font-size: 16.1912px;
+            line-height: 20px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 12.2472px;
+                line-height: 15px;
+            }
+    
+            &_line {
+                height: 10px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 13px;
+                height: 13px;
+                background-size: 13px 13px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 12.2707px;
+                line-height: 15px;
+            }
+        }
+    }
+    .planet#pl9 {
+        width: 165px;
+        height: 165px;
+        background-size: 165px;
+    
+        .planet__name {
+            font-size: 16.8658px;
+            line-height: 20px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 18.4719px;
+                line-height: 22px;
+            }
+    
+            &_line {
+                height: 12px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_icon {
+                width: 19px;
+                height: 19px;
+                background-size: 19px 19px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 15.5165px;
+                line-height: 19px;
+            }
+        }
+    }
+    .planet#pl10 {
+        width: 175px;
+        height: 175px;
+        background-size: 175px;
+    
+        .planet__name {
+            font-size: 18.2151px;
+            line-height: 22px;
+        }
+        .planet__progress {
+    
+            &_vl {
+                font-size: 18.4719px;
+                line-height: 22px;
+            }
+    
+            &_line {
+                height: 12px;
+    
+                &_fill {
+    
+                }
+            }
+        }
+    
+        .planet__val {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &_icon {
+                width: 22px;
+                height: 22px;
+                background-size: 22px 22px;
+                flex: 0 0 auto;
+                margin-right: 5%;
+            }
+    
+            &_text {
+                font-size: 16.1912px;
+                line-height: 20px;
+            }
+        }
+    }
+}
