@@ -192,11 +192,15 @@
     .pls {
 
         &__action {
-            margin-bottom: 30px;
+            margin-bottom: 60px;
+        }
+
+        &__in {
+            padding-bottom: 0;
         }
 
         &__list {
-
+            
             
         }
     }
@@ -261,6 +265,18 @@
             #pl10 {
                 top: 60%;
                 left: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .pls {
+
+        &__list {
+
+            #pl4 {
+                left: 62%;
             }
         }
     }

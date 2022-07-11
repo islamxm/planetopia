@@ -1,16 +1,10 @@
-.header.blur {
-    backdrop-filter: blur(40px);
-}
-
 .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     // background-color: ;
-    transition: all .3s ease;
-    backdrop-filter: blur(40px);
     
 
 
