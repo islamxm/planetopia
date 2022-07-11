@@ -4,6 +4,10 @@ import Button from '../button/Button';
 import { useState } from 'react';
 import {Modal} from 'antd';
 import img from '../../images/game-rules.png';
+import 'atropos/css'
+import Atropos from 'atropos/react';
+import bg from '../../images/hero-bg.png';
+
 
 const Hero = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -36,10 +40,15 @@ const Hero = () => {
                     </div>
                 </div>
             </Modal>
+            
             <div className="container">
                 <div className="hero__in">
                     <div className="hero__img">
-                        <img src={heroLogo} alt="heroLogo"/>
+                    <Atropos shadow={false} highlight={false}>
+                        <img  src={heroLogo} alt="heroLogo"/>
+                    </Atropos>
+                    
+                    
                     </div>
                     <div className="hero__action">
                         <div className="hero__action_item">

@@ -18,7 +18,10 @@ const Planet = ({img, name, progress, value, id, disabled}) => {
     
 
     return (
-        <div className={"planet " + (disabled ? 'disabled' : '')} id={id} style={{backgroundImage: `url(${img})`}}>
+        <div className={"planet " + (disabled ? 'disabled' : '')} id={id}>
+            <div className="planet__img" style={{backgroundImage: `url(https://bubble-game.online/pro2.png)`}}>
+
+            </div>
             <div className="planet__in">
             <div className="planet__name">{name}</div>
             {
