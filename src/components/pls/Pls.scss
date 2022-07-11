@@ -116,7 +116,7 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        overflow: hidden;
+        overflow: visible;
         position: relative;
         height: 100vh;
         
