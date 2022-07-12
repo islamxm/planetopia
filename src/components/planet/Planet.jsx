@@ -22,6 +22,7 @@ const Planet = ({img, name, progress, value, id, disabled}) => {
             <div className="planet__img" style={{backgroundImage: `url(https://bubble-game.online/pro2.png)`}}>
 
             </div>
+            <div className="planet__cloud" style={{background: 'url(https://artem.anmedio.ru/dev/planet/clouds.png) repeat-x'}}></div>
             <div className="planet__in">
             <div className="planet__name">{name}</div>
             {

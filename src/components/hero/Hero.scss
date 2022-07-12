@@ -1,6 +1,6 @@
 .hero {
     background-image: url('../../images/hero-bg.png');
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
     // &__img {
     //     position: absolute;
@@ -24,6 +25,10 @@
     // }
 
     
+
+    &__logo {
+        // filter: drop-shadow(10px 10px 10px red);
+    }
 
     &__in {
         // padding-top: 100px;

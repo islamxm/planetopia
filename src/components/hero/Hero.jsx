@@ -45,7 +45,8 @@ const Hero = () => {
                 <div className="hero__in">
                     <div className="hero__img">
                     <Atropos shadow={false} highlight={false}>
-                        <img  src={heroLogo} alt="heroLogo"/>
+                        <img className='hero__logo'  src={heroLogo} alt="heroLogo"/>
+                        
                     </Atropos>
                     
                     
